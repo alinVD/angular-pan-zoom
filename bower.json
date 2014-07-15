@@ -2,12 +2,12 @@
   "name": "angular-pan-zoom",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "1.2.6",
-    "jQuery": "1.11.0",
-    "hamsterjs": "1.0.4",
-    "angular-mousewheel": "1.0.4"
+    "angular": "~1.2.20",
+    "jQuery": "~1.11.0",
+    "hamsterjs": "~1.0.4",
+    "angular-mousewheel": "~1.0.4"
   },
   "devDependencies": {
-	 "angular-mocks": "1.2.6"
+	 "angular-mocks": "1.2.*"
   }
 }
