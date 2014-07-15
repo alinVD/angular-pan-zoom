@@ -407,7 +407,7 @@ angular.module('panzoom', ['monospaced.mousewheel'])
 
 					var clickPoint = { x: $event.pageX - frameElement.offset().left, y: $event.pageY - frameElement.offset().top };
 
-					if (sign < 0) {
+					if (sign > 0) { // Down wheel should zoom out. This is the most common behaviou
 						zoomIn(clickPoint);
 					} else {
 						zoomOut(clickPoint);
@@ -426,6 +426,7 @@ angular.module('panzoom', ['monospaced.mousewheel'])
 			replace: true
 	};
 }]);
+
 angular.module('panzoomwidget', [])
 .directive('panzoomwidget', ['$document', function($document) {
 	return {
